@@ -6,7 +6,7 @@ The goal of this project is provide a tool for students in the course "Compilerb
 
 ## Status
 *This project is in a very early state and is far from finished. Just a few features are implemented yet and only available for a plain self-made pseudo assembler language. Updates will unroll about every two weeks, but without guarantee.* 
-No papers are written so far, as the project has just started a few days ago and can go under static changes at any time.
+No papers are written so far, as the project has just started a few days ago and can go under drastic changes any time.
 
 ## Decription
 The easiest way to run this program is to bind the Project Solution (.sln) together with all files into a <a href="https://visualstudio.microsoft.com/de/downloads/">Visual Studio</a> project. This will stay the best practice for a long time (maybe even until the project ist finished).
