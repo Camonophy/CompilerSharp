@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompilerSharp", "CompilerSharp\CompilerSharp.csproj", "{57BCACC5-43F3-49A2-B9F2-F695AE7EDEAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompilerSharp", "CompilerSharp\CompilerSharp.csproj", "{57BCACC5-43F3-49A2-B9F2-F695AE7EDEAF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestCompilerSharp.UnitTests", "TestCompilerSharp.UnitTests\TestCompilerSharp.UnitTests.csproj", "{72B4E854-FA10-48DA-8B19-6D58479165C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{57BCACC5-43F3-49A2-B9F2-F695AE7EDEAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57BCACC5-43F3-49A2-B9F2-F695AE7EDEAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57BCACC5-43F3-49A2-B9F2-F695AE7EDEAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72B4E854-FA10-48DA-8B19-6D58479165C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72B4E854-FA10-48DA-8B19-6D58479165C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72B4E854-FA10-48DA-8B19-6D58479165C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72B4E854-FA10-48DA-8B19-6D58479165C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

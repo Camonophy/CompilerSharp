@@ -1,32 +1,37 @@
 ﻿using CompilerSharp;
 using System;
 
-/// <summary>
-/// Represents an LOAD; operator in peudocode.
-/// </summary>
-public class Load : IExpression
+namespace CompilerSharp
 {
-    private int value = 0;
-    private readonly Type t = Type.LOAD;
-
     /// <summary>
-    /// Constructor for a load with one parameter.
+    /// Represents an LOAD; operator in peudocode.
     /// </summary>
-    public Load(int value) { this.value = value; }
+    public class Load : IExpression
+    {
+        private int value = 0;
+        private readonly Type t = Type.LOAD;
 
-    public IExpression getFirst() { return null; }
+        /// <summary>
+        /// Constructor for a load with one parameter.
+        /// </summary>
+        public Load(int value) { this.value = value; }
 
-    public IExpression getSecond() { return null; }
+        public Load(ISymbol value) { this.value = value.getValue(); }
 
-    public Type getType() { return this.t; }
+        public IExpression getFirst() { return null; }
 
-    public int getValue() { return this.value; }
+        public IExpression getSecond() { return null; }
 
-    public override string ToString() { return $"LOAD {this.value}"; }
+        public Type getType() { return this.t; }
 
-    public void setLeft(IExpression left) { }
+        public int getValue() { return this.value; }
 
-    public void setRight(IExpression right) { }
+        public override string ToString() { return $"LOAD {this.value}"; }
 
-    public void setValue(int val) { this.value = val; }
+        public void setLeft(IExpression left) { }
+
+        public void setRight(IExpression right) { }
+
+        public void setValue(int val) { this.value = val; }
+    }
 }

@@ -1,37 +1,41 @@
 ﻿using System;
 
-/// <summary>
-/// Root expression for a program in pseudocode.
-/// </summary>
-public class ProgStart : IExpression
+namespace CompilerSharp
 {
-    private IExpression left;
-    private readonly Type t = Type.START;
 
     /// <summary>
-    /// Constructor for an empty program.
+    /// Root expression for a program in pseudocode.
     /// </summary>
-    public ProgStart() {  }
+    public class ProgStart : IExpression
+    {
+        private IExpression left;
+        private readonly Type t = Type.START;
 
-    /// <summary>
-    /// Constructor for a program with an expression.
-    /// </summary>
-    public ProgStart(IExpression left) { this.left = left; }
+        /// <summary>
+        /// Constructor for an empty program.
+        /// </summary>
+        public ProgStart() { }
 
-    public IExpression getFirst() { return this.left; }
+        /// <summary>
+        /// Constructor for a program with an expression.
+        /// </summary>
+        public ProgStart(IExpression left) { this.left = left; }
 
-    public IExpression getSecond() { return null; }
+        public IExpression getFirst() { return this.left; }
 
-    public Type getType() { return this.t; }
+        public IExpression getSecond() { return null; }
 
-    public int getValue() { return -1; }
+        public Type getType() { return this.t; }
 
-    public override string ToString() { return "START"; }
+        public int getValue() { return -1; }
 
-    public void setLeft(IExpression left) { this.left = left; }
+        public override string ToString() { return "START"; }
 
-    public void setRight(IExpression right) { }
+        public void setLeft(IExpression left) { this.left = left; }
 
-    public void setValue(int val) { }
+        public void setRight(IExpression right) { }
 
+        public void setValue(int val) { }
+
+    }
 }
